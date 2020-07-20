@@ -3,7 +3,8 @@ import { Course } from './course';
 
 @Component({
   selector: 'app-course-list',
-  templateUrl: './course-list.component.html'
+  templateUrl: './course-list.component.html',
+  styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent implements OnInit{
 
@@ -14,21 +15,31 @@ export class CourseListComponent implements OnInit{
       {
         id: 1,
         name: 'Angular: Forms',
-        imageUrl: '',
+        imageUrl: '/assets/images/forms.png',
         price: 45.99,
         code: 'XPS-8796',
         duration: 120,
-        rating: 5.4,
+        rating: 4.2,
         releaseDate: 'December, 2, 2020'
       },
       {
         id: 1,
         name: 'Angular: HTML',
-        imageUrl: '',
+        imageUrl: '/assets/images/http.png',
         price: 99.99,
         code: 'XPS-8586',
         duration: 120,
-        rating: 5.5,
+        rating: 5,
+        releaseDate: 'December, 4, 2020'
+      },
+      {
+        id: 1,
+        name: 'Angular: HTML II',
+        imageUrl: '/assets/images/http.png',
+        price: 99.99,
+        code: 'XPS-8587',
+        duration: 120,
+        rating: 3.5,
         releaseDate: 'December, 4, 2020'
       }
     ]
